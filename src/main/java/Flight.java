@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class Flight {
 
@@ -8,17 +7,16 @@ public class Flight {
 
 
     private Destination destination;
-    private UUID id ;
-    private ArrayList<Passenger> passengerList= new ArrayList<>();
-
-
-
+    private int ID;
+    private ArrayList<Passenger> passengerList;
+    public static int i=1000;
 //----------------------UML segment 3.1 : constructor  ----------------------------------
 
-    public Flight(Destination destination, UUID id, ArrayList<Passenger> passengerList) {
+    public Flight(Destination destination) {
         this.destination = destination;
-        this.id = id;
-        this.passengerList = passengerList;
+        this.passengerList = new ArrayList<>();
+        this.ID = i;
+        i++;
     }
 
 
@@ -33,20 +31,25 @@ public class Flight {
         this.destination = destination;
     }
 
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
     public ArrayList<Passenger> getPassengerList() {
         return passengerList;
     }
 
     public void setPassengerList(ArrayList<Passenger> passengerList) {
         this.passengerList = passengerList;
-
     }
+
+    public int getId () {
+        return ID;
+    }
+
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "destination=" + destination +
+                ", ID=" + ID +
+                '}';
+    }
+
+
 }

@@ -1,28 +1,31 @@
 public enum Destination {
+    BALI,
+    BORABORA,
+    COSTARICA,
+    DUBAI,
+    FIJI,
+    HAWAII,
+    ITALY,
+    MALDIVES,
+    MOROCCO,
+    NEWYORK,
+    SAOTOME,
+    SEYCHELLES,
+    SYDNEY;
 
-    BALI(1),
-    MOROCCO(2),
-    SYDNEY(3),
-    SAOTOME(4),
-    DUBAI(5),
-    NEWYORK(6),
-    ITALY(7),
-    MALDIVES(8),
-    BORABORA(9),
-    HAWAII(10),
-    SEYCHELLES(11),
-    COSTARICA(12),
-    FIJI(13);
+    public static boolean CheckDestination(String destination) {
+        destination = destination.toUpperCase();
+        for (Destination place : Destination.values()) {
+            if (place.name().equals(destination)) {
+                return true;
+            }
+        }
 
-
-
-
-
-private final int destinationNumber;
-
-    Destination(int destinationNumber) {
-        this.destinationNumber = destinationNumber;
+        return false;
     }
+
+
+
 }
 
 
