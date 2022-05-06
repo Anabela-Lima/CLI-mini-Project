@@ -7,14 +7,11 @@ public class Database {
     private ArrayList<Passenger> passengerArrayList;
     private ArrayList<Flight>flightArrayList;
 
-
-
 //----------------------UML segment 3.1 : constructor  -------------------------------------------------------------
     public Database() {
         this.passengerArrayList = new ArrayList<>();
         this.flightArrayList = new ArrayList<>();
     }
-
 
 //----------------------UML segment 3.2 : getters and setters --------------------------------------------------------
 

@@ -4,8 +4,6 @@ public class Flight {
 
 
 //----------------------UML segment 1: properties ----------------------------------
-
-
     private Destination destination;
     private int ID;
     private ArrayList<Passenger> passengerList;
@@ -18,7 +16,6 @@ public class Flight {
         this.ID = i;
         i++;
     }
-
 
 //----------------------UML segment 3.2 : getters and setters ------------------------------
 

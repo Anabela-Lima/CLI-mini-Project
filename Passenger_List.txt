@@ -1,0 +1,2 @@
+Passenger{name='Hamza', ID=1001, email='Hamza@sideFlights.com'} has booked to go on Flight{destination=MOROCCO, ID=1001}
+

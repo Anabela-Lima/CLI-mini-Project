@@ -9,13 +9,13 @@ public class Passenger {
     private String name;
     private int ID;
     private String email;
-    private Flight flight;
+    public static int i = 1000;
 
 //----------------------UML segment 3.1 : constructor  ----------------------------------------------------------------
 
     public Passenger(String name, String email) {
         this.name = name;
-        this.ID = ID;
+        this.ID = i;
         this.email = email;
         i++;
     }
@@ -44,7 +44,6 @@ public class Passenger {
     }
 
 //----------------------UML segment 3.3 : to string method-----------------------------------------------------------
-
 
 
     @Override
@@ -87,10 +86,7 @@ public class Passenger {
                 " Please book a flight before cancelling.");
     }
 
-
 //----------------------------------------------------------------------------------------------------------------
-
-
 
 
 }
