@@ -1,8 +1,5 @@
 
 
-# Mini-Project: 
-Team: Ana Bela, Jehna, Hamza, Keiran 
-
 # Mini-Project: Project status:
 
 Completed MVP and Extensions 
